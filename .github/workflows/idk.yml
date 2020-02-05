@@ -1,0 +1,17 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run a script first time
+      run: echo Hey Bro, Have you seen this before?
+    - name: Bruh
+      run: |
+        echo Did I assume your gender? No I did not boy.
+        echo Now go somewhere boi.
